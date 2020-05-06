@@ -8,10 +8,11 @@ function WeatherCard() {
 
     return (
         <div className="card">
+            {/* <div className="bg"></div> */}
             <div className="container">
             <form className="example" action="submit">
                 <input type="text" placeholder="Search.." name="search"></input>
-                <button type="submit"> <i class="fa fa-search"></i></button>
+                <button type="submit"> <i className="fa fa-search"></i></button>
             </form>  
             <div className="weatherInfo">
                 <div className="leftCard">
@@ -20,7 +21,7 @@ function WeatherCard() {
                     <p>London, United Kingdom</p>
                 </div>
                 <div className="rightCard">
-                    <img src="https://img.icons8.com/android/480/000000/sun.png" alt="sun png"/>
+                    <img className="sunPng" src="https://img.icons8.com/android/480/000000/sun.png" alt="sun png"/>
                 </div>
             </div>
             </div>

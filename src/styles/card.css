@@ -1,76 +1,65 @@
 .card {
- height: 60vh;
- width: 60%;
- background-color: white;   
- border: 1px solid black;
- border-radius: 50px;
- box-shadow: 0px 0px 50px 1px gray;
- background-image: url('../assets/img/3840x2160-575993-Digital-Art.png');
- background-repeat: no-repeat;
- background-size: 100% 100%; 
- opacity: 0.5;
+    height: 60vh;
+    width: 60%;
+    border: 1px solid darkblue;
+    border-radius: 50px;
+    box-shadow: 0px 0px 50px 1px gray;
+    position: relative;
+}
+
+.card::before {    
+    content: "";
+    border-radius: 50px;
+    background-image: url('../assets/img/3840x2160-575993-Digital-Art.png');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+}
+
+.card > div {
+    position: relative;
 }
 
 .container {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .container > * {
-    width: 100%;
+    flex: 1 auto;
 }
-
-.container:first-child {
-    flex: 2 4 auto;
-}
-
-.example {
-    display: inline-block;
-    margin: 100px;
-    box-sizing: border-box;
-}
-
-
-.example > input {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 70%;
-}
-
-.example > button {
-    float: left;
-    width: 10%;
-    padding: 10px;
-    background: rgb(255, 109, 109);
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none; /* Prevent double borders */
-    cursor: pointer;    
-}
-
-
 
 .weatherInfo {
-    flex: 1 1 auto;
-    height: auto;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-content: stretch;
     justify-content: stretch;
 }
 
-.weatherInfo > *  {
-    flex: 1;
+.weatherInfo > * {
+    flex: 1 auto;
+    border: 1px solid red;
 }
 
 .leftCard {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding-left: 50px;
+}
+
+
+
+
+
+.sunPng {
+    width:300px;
+    height:auto;
 }
