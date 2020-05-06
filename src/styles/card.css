@@ -1,13 +1,122 @@
 .card {
+    position: relative;    
+    width: 50%;
+    max-height: 100%;
+    border: 1px solid darkblue;
+    border-radius: 50px;
+    box-shadow: 0px 0px 50px 1px gray;
+}
+
+.card::before {    
+    content: "";
+    position: absolute;
+    background-image: url('../assets/img/3840x2160-575993-Digital-Art.png');
+    background-size: cover;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    border-radius: 50px;
+}
+
+.card > div {
+    position: relative;    
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: stretch;
+    flex-wrap: wrap;
+}
+
+.container > div {
+    flex: 1 auto;
+}
+
+.searchBar {
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;    
+}
+
+
+.example {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.example > * {
+    max-width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.example input {
+    flex: 1 auto;
+    font-size: large;
+}
+
+.weatherInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.weatherInfo > div {
+    flex: 1 auto;
+}
+
+.leftCard {
+    padding-left: 1%;
+    max-height:100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.sunPng {
+    max-width:100%;
+    max-height:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.card {
     height: 60vh;
     width: 60%;
     border: 1px solid darkblue;
     border-radius: 50px;
     box-shadow: 0px 0px 50px 1px gray;
     position: relative;
-}
+} */
 
-.card::before {    
+/* .card::before {    
     content: "";
     border-radius: 50px;
     background-image: url('../assets/img/3840x2160-575993-Digital-Art.png');
@@ -18,48 +127,78 @@
     bottom: 0px;
     left: 0px;
     opacity: 0.5;
-}
+} */
 
-.card > div {
+/* .card > div {
     position: relative;
-}
+} */
 
-.container {
+/* .container {
     height: 100%;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
+} */
+
+/* .container > * {
+    flex: 1 auto;
+    border: 1px solid red;
+} */
+
+/* .searchBar {
+    border: 1px solid yellow;
+    text-align:center; 
+    vertical-align:middle;
+} */
+
+
+
+
+/* 
+
+
+.example {
+    margin-top: 10px;
+    border: 1px solid green;
+    display: inline-block;
+    vertical-align: middle;    
 }
 
-.container > * {
-    flex: 1 auto;
+.example > * {
+    margin: auto;
+    padding: auto;
 }
+
+
 
 .weatherInfo {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    align-content: stretch;
-    justify-content: stretch;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
 }
 
 .weatherInfo > * {
     flex: 1 auto;
-    border: 1px solid red;
 }
 
 .leftCard {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1%;
+    max-height:100%;
 }
-
-
-
 
 
 .sunPng {
-    width:300px;
-    height:auto;
+    max-width:100%;
+    max-height:100%;
 }
+ */
